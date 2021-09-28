@@ -15,10 +15,4 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(Vector3.up * jumpSpeed);
         }
     }
-
-    // FixedUpdate should be used for physics 
-    private void FixedUpdate()
-    {
-        
-    }
 }
