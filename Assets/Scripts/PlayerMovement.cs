@@ -25,8 +25,10 @@ public class PlayerMovement : MonoBehaviour
     }
 
     bool IsGrounded()
+    // Shoot a raycast right below the player
+    // If it hits 
     {
-        return Physics.Raycast(transform.position, Vector3.down, distanceToGround);
+        return Physics.Raycast(transform.position, Vector3.down, distanceToGround, LayerMask.GetMask("Ground"));
 
     }
 }
